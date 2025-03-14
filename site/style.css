@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    display: flex;
+    font-family: "Playfair Display", serif;
+    font-size: 100px;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+.barra-nav {
+    display: flex;
+    padding: 10px;
+}
