@@ -22,6 +22,7 @@ body {
     font-size: 50px;
     text-decoration: none;
     color: black;
+    margin-left: -40px;
 }
 .logo {
     display: flex;
@@ -47,18 +48,21 @@ body {
     color: black;
 }
 .menu-lateral {
-    display: none;
+    display: flex;
     position: absolute;
     background-color: white;
     width: 800px;
-    height: 100%;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    /* height: 100%; */
     margin-top: -27px;
+    left: -800px;
+    opacity: 0;
+    transition: left 1.5s ease, opacity 3s ease;
 }
 .menu-lateral ul {
     display: flex;
     list-style: none;
-    margin-left: 90px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 .menu-lateral ul li {
     padding: 15px;
@@ -68,7 +72,7 @@ body {
     letter-spacing: 2px;
     text-decoration: none;
     color: dimgrey;
-    font-size: 19px;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 .menu-lateral ul li a:hover {
@@ -84,4 +88,12 @@ body {
 }
 #menu:target {
     display: block;
+    left: 0;
+    opacity: 1;
+}
+#menu:target .fechar {
+    display: block;
+}
+#menu {
+    left: -900px;
 }
