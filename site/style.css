@@ -45,7 +45,7 @@ body {
     transition: color 0.3s ease;
 }
 .item_flex:hover{
-    color: black;
+    color: rgb(215, 108, 130);
 }
 .menu-lateral {
     display: flex;
@@ -76,15 +76,21 @@ body {
     transition: color 0.3s ease;
 }
 .menu-lateral ul li a:hover {
-    color: black;
+    color: rgb(215, 108, 130);
 }
 .fechar {
     position: absolute;
+    top: -112px;
+    right: 691px;
+    font-size: 100px;
+    text-decoration: none;
+    color: black;
+    /* position: absolute;
     top: -138px;
     right: -26px;
     font-size: 100px;
     text-decoration: none;
-    color: black;
+    color: black; */
 }
 #menu:target {
     display: block;
@@ -96,4 +102,27 @@ body {
 }
 #menu {
     left: -900px;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 210px;
+    margin-top: 300px;
+}
+.banner-bloco {
+    width: 23%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.banner-bloco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.banner-bloco:hover img {
+    transform: scale(1.1);
 }
