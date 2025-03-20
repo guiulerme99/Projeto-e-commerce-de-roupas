@@ -89,6 +89,7 @@ body {
     font-size: 100px;
     text-decoration: none;
     color: black;
+    background-color: white;
 }
 #menu:target {
     display: block;
