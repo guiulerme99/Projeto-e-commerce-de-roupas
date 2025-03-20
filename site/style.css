@@ -139,7 +139,7 @@ body {
     border-radius: 20px;
 }
 .banner-bloco img {
-    width: 400px;
+    width: 450px;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -529,6 +529,18 @@ body {
     right: 10px;
     border-radius: 50%;
     z-index: 1;
+}
+.add-cesto {
+    display: flex;
+    margin-left: 105px;
+    margin-bottom: -20px;
+    font-size: 35px;
+    cursor: pointer;
+    color: dimgrey;
+    transition: color 0.3s ease;
+}
+.add-cesto:hover {
+    color: rgb(215, 108, 130);
 }
 .sustentavel-icon img {
     height: 100px;
