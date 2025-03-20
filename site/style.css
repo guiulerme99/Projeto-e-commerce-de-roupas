@@ -462,8 +462,13 @@ body {
 }
 .sandalia-item img {
     width: 100%;
-    height: auto;
+    height: 300px;
     display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.sandalia-item img:hover {
+    transform: scale(1.1);
 }
 .sandalia-info {
     padding: 20px;
@@ -487,7 +492,7 @@ body {
     margin-bottom: 10px;
 }
 .comprar-btn {
-    background-color: rgb(215, 108, 130);
+    background-color: dimgrey;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -496,5 +501,15 @@ body {
     transition: background-color 0.3s ease;
 }
 .comprar-btn:hover {
-    background-color: rgb(190, 90, 110);
+    background-color: rgb(215, 108, 130);
+}
+.sustentavel-icon {
+    position: fixed;
+    bottom: 1px;
+    right: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.sustentavel-icon img {
+    height: 100px;
 }
